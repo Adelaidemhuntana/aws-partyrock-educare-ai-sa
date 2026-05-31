@@ -1,0 +1,1 @@
+# aws-partyrock-educare-ai-sa
