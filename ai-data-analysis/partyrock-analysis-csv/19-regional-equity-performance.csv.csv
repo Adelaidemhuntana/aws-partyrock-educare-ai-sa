@@ -1,0 +1,5 @@
+intervention_type,total_cases,avg_current_performance,avg_poorest_performance,high_personalization_need,critical_access_need,numeracy_cases,reading_cases,primary_regions
+Foundational Skills Building,31,4.9,1.5,0,3,20,11,"SSA, SA, LAC"
+Accelerated Learning Programs,34,20.1,10.3,9,14,18,16,"SA, SSA, EAP, ECA, MENA, LAC"
+Targeted Skill Enhancement,19,41.6,30,7,6,6,13,"SA, EAP, ECA, SSA, MENA, LAC"
+Advanced Enrichment,16,62.3,53.4,2,4,6,10,"ECA, EAP, MENA"

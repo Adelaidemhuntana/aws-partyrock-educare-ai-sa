@@ -1,0 +1,13 @@
+Region,Subject,total_records,avg_performance,avg_wealth_gap,avg_location_gap,low_inequality_count
+EAP,Numeracy,8,38.3,10.4,1.9,5
+SSA,Numeracy,24,8.4,12.5,5.7,15
+EAP,Reading,8,51.5,16.7,4.6,3
+ECA,Numeracy,6,45.2,16.8,5,2
+LAC,Numeracy,2,15,17,3.5,1
+SA,Numeracy,6,19.5,20.8,7.2,3
+MENA,Numeracy,4,28.8,22.3,-1,0
+ECA,Reading,6,59.8,23,7.8,1
+SSA,Reading,24,14.7,26.3,12.7,7
+SA,Reading,6,32.3,29.2,10.7,0
+MENA,Reading,4,48,32.3,6,0
+LAC,Reading,2,35,38.5,12,0

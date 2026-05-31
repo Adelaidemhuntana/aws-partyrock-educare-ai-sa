@@ -1,0 +1,11 @@
+Region,Subject,avg_performance,avg_girls,avg_boys
+SSA,Numeracy,8.4,8.2,8.6
+SSA,Reading,14.7,16,13.5
+LAC,Numeracy,15,15,14.5
+SA,Numeracy,19.5,18.2,20.7
+MENA,Numeracy,28.8,28,29.8
+SA,Reading,32.3,34,30.7
+LAC,Reading,35,34.5,35
+EAP,Numeracy,38.3,39,37.5
+ECA,Numeracy,45.2,46.8,46.5
+MENA,Reading,48,50,46

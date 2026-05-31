@@ -1,0 +1,46 @@
+Countries and areas,Region,Subject,Total,poorest,rural,risk_level
+Central African Republic,SSA,Numeracy,0,0,1,Critical Risk
+Democratic Republic of the Congo,SSA,Numeracy,0,0,0,Critical Risk
+Democratic Republic of the Congo,SSA,Numeracy,1,0,0,Critical Risk
+Lesotho,SSA,Numeracy,1,1,1,Critical Risk
+Central African Republic,SSA,Numeracy,2,0,1,Critical Risk
+Central African Republic,SSA,Reading,2,0,1,Critical Risk
+Chad,SSA,Reading,3,0,2,Critical Risk
+Togo,SSA,Numeracy,3,1,2,Critical Risk
+Chad,SSA,Reading,4,1,3,Critical Risk
+Gambia,SSA,Numeracy,4,1,1,Critical Risk
+Madagascar,SSA,Numeracy,4,1,4,Critical Risk
+Togo,SSA,Reading,4,3,2,Critical Risk
+Guinea-Bissau,SSA,Numeracy,4,4,5,Critical Risk
+Central African Republic,SSA,Reading,5,0,2,Critical Risk
+Zimbabwe,SSA,Numeracy,5,0,2,Critical Risk
+Chad,SSA,Numeracy,5,1,5,Critical Risk
+Gambia,SSA,Reading,5,3,3,Critical Risk
+Suriname,LAC,Numeracy,5,3,5,Critical Risk
+Ghana,SSA,Reading,6,0,2,Critical Risk
+Guinea-Bissau,SSA,Reading,6,1,3,Critical Risk
+Sierra Leone,SSA,Reading,6,1,2,Critical Risk
+Sierra Leone,SSA,Numeracy,6,2,2,Critical Risk
+Madagascar,SSA,Numeracy,7,1,6,Critical Risk
+Chad,SSA,Numeracy,7,2,5,Critical Risk
+Pakistan (Punjab),SA,Numeracy,7,4,6,Critical Risk
+Guinea-Bissau,SSA,Numeracy,7,6,7,Critical Risk
+Democratic Republic of the Congo,SSA,Reading,8,1,4,Critical Risk
+Ghana,SSA,Numeracy,8,1,4,Critical Risk
+Democratic Republic of the Congo,SSA,Reading,9,2,4,Critical Risk
+Gambia,SSA,Numeracy,9,3,3,Critical Risk
+Togo,SSA,Numeracy,9,3,6,Critical Risk
+Sierra Leone,SSA,Numeracy,12,3,5,High Risk
+Guinea-Bissau,SSA,Reading,12,4,6,High Risk
+Gambia,SSA,Reading,12,5,7,High Risk
+Pakistan (Punjab),SA,Numeracy,12,6,10,High Risk
+Kiribati,EAP,Numeracy,12,12,15,High Risk
+Lesotho,SSA,Numeracy,13,7,11,High Risk
+Madagascar,SSA,Reading,13,7,12,High Risk
+Lesotho,SSA,Reading,13,8,8,High Risk
+Bangladesh,SA,Numeracy,13,9,11,High Risk
+Tunisia,MENA,Numeracy,15,8,13,High Risk
+Sierra Leone,SSA,Reading,16,2,5,High Risk
+Ghana,SSA,Numeracy,16,5,11,High Risk
+Togo,SSA,Reading,18,5,11,High Risk
+Sao Tome and Principe,SSA,Numeracy,18,8,17,High Risk

@@ -1,0 +1,7 @@
+primary_challenge,instances,countries_affected,avg_performance,avg_poorest_score,avg_wealth_gap,avg_location_gap,regions_affected
+Critical Performance Gap,31,13,4.9,1.5,10.3,5.3,"SSA, SA, LAC"
+Moderate Challenge,22,11,52.4,44.3,17.7,1.9,"SA, EAP, ECA, SSA, MENA"
+Severe Wealth Inequality,18,13,34.4,18.3,40.2,16.6,"SSA, EAP, SA, ECA, LAC, MENA"
+Basic Competency Gap,12,11,22.9,13.3,22.8,4.1,"SA, SSA, EAP, ECA, MENA, LAC"
+Rural Access Barrier,10,8,31.8,25.4,21.8,14.4,"SA, SSA, ECA, EAP, MENA"
+Numeracy Skills Deficit,7,6,15,10.3,14.3,1.4,"SA, EAP, SSA, MENA"

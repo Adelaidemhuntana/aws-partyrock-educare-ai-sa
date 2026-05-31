@@ -1,0 +1,101 @@
+Countries and areas,Region,Sub-region,Development regions,Age group,Subject,Total,Gender Girls,Gender Boys,Residence Rural,Residence Urban,Wealth quintile: Poorest,Wealth quintile: Second,Wealth quintile: Middle,Wealth quintile: Fourth,Wealth quintile: Richest,Data Source,Data Year
+Bangladesh,SA,SA,Least Developed,Age 7 to 14,Reading,49 ,52 ,45 ,47 ,56 ,35 ,44 ,51 ,55 ,64 ,MICS6,2019
+Bangladesh,SA,SA,Least Developed,Age 7 to 14,Numeracy,28 ,29 ,27 ,27 ,33 ,20 ,25 ,27 ,31 ,39 ,MICS6,2019
+Bangladesh,SA,SA,Least Developed,Grade 2/3,Reading,25 ,26 ,23 ,22 ,36 ,17 ,18 ,23 ,29 ,42 ,MICS6,2019
+Bangladesh,SA,SA,Least Developed,Grade 2/3,Numeracy,13 ,12 ,13 ,11 ,17 ,9 ,10 ,11 ,13 ,22 ,MICS6,2019
+Central African Republic,SSA,WCA,Least Developed,Age 7 to 14,Reading,5 ,5 ,5 ,2 ,9 ,0 ,3 ,2 ,4 ,13 ,MICS6,2018-2019
+Central African Republic,SSA,WCA,Least Developed,Age 7 to 14,Numeracy,2 ,1 ,2 ,1 ,3 ,0 ,1 ,2 ,1 ,3 ,MICS6,2018-2019
+Central African Republic,SSA,WCA,Least Developed,Grade 2/3,Reading,2 ,2 ,2 ,1 ,2 ,0 ,2 ,1 ,1 ,3 ,MICS6,2018-2019
+Central African Republic,SSA,WCA,Least Developed,Grade 2/3,Numeracy,0 ,0 ,1 ,1 ,0 ,0 ,1 ,1 ,0 ,0 ,MICS6,2018-2019
+Chad,SSA,WCA,Least Developed,Age 7 to 14,Reading,4 ,4 ,5 ,3 ,13 ,1 ,1 ,2 ,6 ,12 ,MICS6,2019
+Chad,SSA,WCA,Least Developed,Age 7 to 14,Numeracy,7 ,6 ,8 ,5 ,17 ,2 ,3 ,4 ,7 ,17 ,MICS6,2019
+Chad,SSA,WCA,Least Developed,Grade 2/3,Reading,3 ,1 ,4 ,2 ,6 ,0 ,0 ,1 ,3 ,5 ,MICS6,2019
+Chad,SSA,WCA,Least Developed,Grade 2/3,Numeracy,5 ,4 ,7 ,5 ,9 ,1 ,4 ,5 ,4 ,9 ,MICS6,2019
+Democratic Republic of the Congo,SSA,WCA,Least Developed,Age 7 to 14,Reading,9 ,9 ,9 ,4 ,15 ,2 ,3 ,5 ,12 ,24 ,MICS6,2017-2018
+Democratic Republic of the Congo,SSA,WCA,Least Developed,Age 7 to 14,Numeracy,0 ,1 ,0 ,0 ,1 ,0 ,0 ,0 ,1 ,1 ,MICS6,2017-2018
+Democratic Republic of the Congo,SSA,WCA,Least Developed,Grade 2/3,Reading,8 ,7 ,9 ,4 ,14 ,1 ,5 ,4 ,8 ,23 ,MICS6,2017-2018
+Democratic Republic of the Congo,SSA,WCA,Least Developed,Grade 2/3,Numeracy,1 ,1 ,1 ,0 ,2 ,0 ,0 ,0 ,2 ,2 ,MICS6,2017-2018
+Gambia,SSA,WCA,Least Developed,Age 7 to 14,Reading,12 ,13 ,11 ,7 ,16 ,5 ,9 ,10 ,13 ,29 ,MICS6,2018
+Gambia,SSA,WCA,Least Developed,Age 7 to 14,Numeracy,9 ,10 ,7 ,3 ,12 ,3 ,5 ,10 ,12 ,15 ,MICS6,2018
+Gambia,SSA,WCA,Least Developed,Grade 2/3,Reading,5 ,6 ,4 ,3 ,6 ,3 ,4 ,2 ,6 ,12 ,MICS6,2018
+Gambia,SSA,WCA,Least Developed,Grade 2/3,Numeracy,4 ,4 ,3 ,1 ,5 ,1 ,2 ,5 ,4 ,7 ,MICS6,2018
+Ghana,SSA,WCA,Less Developed,Age 7 to 14,Reading,21 ,22 ,20 ,12 ,34 ,5 ,11 ,21 ,28 ,50 ,MICS6,2017-2018
+Ghana,SSA,WCA,Less Developed,Age 7 to 14,Numeracy,16 ,14 ,17 ,11 ,22 ,5 ,12 ,13 ,21 ,31 ,MICS6,2017-2018
+Ghana,SSA,WCA,Less Developed,Grade 2/3,Reading,6 ,6 ,6 ,2 ,11 ,0 ,2 ,3 ,5 ,26 ,MICS6,2017-2018
+Ghana,SSA,WCA,Less Developed,Grade 2/3,Numeracy,8 ,5 ,11 ,4 ,13 ,1 ,12 ,2 ,9 ,20 ,MICS6,2017-2018
+Guinea-Bissau,SSA,WCA,Least Developed,Age 7 to 14,Reading,12 ,13 ,12 ,6 ,24 ,4 ,4 ,6 ,20 ,29 ,MICS6,2018-2019
+Guinea-Bissau,SSA,WCA,Least Developed,Age 7 to 14,Numeracy,7 ,7 ,8 ,7 ,8 ,6 ,7 ,8 ,8 ,9 ,MICS6,2018-2019
+Guinea-Bissau,SSA,WCA,Least Developed,Grade 2/3,Reading,6 ,6 ,6 ,3 ,10 ,1 ,3 ,3 ,10 ,10 ,MICS6,2018-2019
+Guinea-Bissau,SSA,WCA,Least Developed,Grade 2/3,Numeracy,4 ,2 ,7 ,5 ,4 ,4 ,7 ,5 ,4 ,2 ,MICS6,2018-2019
+Kiribati,EAP,EAP,Least Developed,Age 7 to 14,Reading,35 ,41 ,30 ,35 ,36 ,33 ,33 ,27 ,31 ,54 ,MICS6,2018-2019
+Kiribati,EAP,EAP,Least Developed,Age 7 to 14,Numeracy,22 ,24 ,19 ,25 ,18 ,22 ,23 ,16 ,17 ,31 ,MICS6,2018-2019
+Kiribati,EAP,EAP,Least Developed,Grade 2/3,Reading,29 ,35 ,24 ,26 ,32 ,18 ,32 ,15 ,31 ,51 ,MICS6,2018-2019
+Kiribati,EAP,EAP,Least Developed,Grade 2/3,Numeracy,12 ,12 ,12 ,15 ,9 ,12 ,18 ,4 ,6 ,21 ,MICS6,2018-2019
+Kyrgyzstan,ECA,EECA,Less Developed,Age 7 to 14,Reading,58 ,60 ,56 ,54 ,67 ,53 ,52 ,52 ,60 ,77 ,MICS6,2018
+Kyrgyzstan,ECA,EECA,Less Developed,Age 7 to 14,Numeracy,51 ,54 ,49 ,49 ,56 ,51 ,43 ,52 ,50 ,64 ,MICS6,2018
+Kyrgyzstan,ECA,EECA,Less Developed,Grade 2/3,Reading,39 ,42 ,35 ,33 ,51 ,37 ,20 ,43 ,36 ,64 ,MICS6,2018
+Kyrgyzstan,ECA,EECA,Less Developed,Grade 2/3,Numeracy,30 ,34 ,26 ,28 ,34 ,35 ,17 ,32 ,27 ,42 ,MICS6,2018
+Lesotho,SSA,ESA,Least Developed,Age 7 to 14,Reading,44 ,53 ,34 ,37 ,57 ,27 ,39 ,49 ,45 ,68 ,MICS6,2018
+Lesotho,SSA,ESA,Least Developed,Age 7 to 14,Numeracy,13 ,15 ,11 ,11 ,18 ,7 ,13 ,16 ,13 ,20 ,MICS6,2018
+Lesotho,SSA,ESA,Least Developed,Grade 2/3,Reading,13 ,18 ,8 ,8 ,25 ,8 ,6 ,10 ,11 ,36 ,MICS6,2018
+Lesotho,SSA,ESA,Least Developed,Grade 2/3,Numeracy,1 ,2 ,0 ,1 ,2 ,1 ,0 ,2 ,2 ,2 ,MICS6,2018
+Madagascar,SSA,ESA,Least Developed,Age 7 to 14,Reading,24 ,26 ,21 ,19 ,40 ,5 ,12 ,22 ,33 ,59 ,MICS6,2018
+Madagascar,SSA,ESA,Least Developed,Age 7 to 14,Numeracy,7 ,8 ,6 ,6 ,12 ,1 ,3 ,5 ,12 ,20 ,MICS6,2018
+Madagascar,SSA,ESA,Least Developed,Grade 2/3,Reading,13 ,15 ,12 ,12 ,20 ,7 ,11 ,9 ,13 ,33 ,MICS6,2018
+Madagascar,SSA,ESA,Least Developed,Grade 2/3,Numeracy,4 ,5 ,3 ,4 ,5 ,1 ,2 ,2 ,4 ,14 ,MICS6,2018
+Mongolia,EAP,EAP,Less Developed,Age 7 to 14,Reading,63 ,64 ,63 ,63 ,63 ,60 ,59 ,66 ,66 ,66 ,MICS6,2018
+Mongolia,EAP,EAP,Less Developed,Age 7 to 14,Numeracy,46 ,48 ,44 ,49 ,45 ,46 ,43 ,47 ,49 ,46 ,MICS6,2018
+Mongolia,EAP,EAP,Less Developed,Grade 2/3,Reading,45 ,47 ,43 ,43 ,47 ,41 ,40 ,45 ,52 ,50 ,MICS6,2018
+Mongolia,EAP,EAP,Less Developed,Grade 2/3,Numeracy,29 ,29 ,29 ,28 ,30 ,23 ,27 ,30 ,35 ,31 ,MICS6,2018
+Nepal,SA,SA,Least Developed,Age 7 to 14,Reading,39 ,40 ,38 ,36 ,41 ,33 ,38 ,34 ,41 ,56 ,MICS6,2019
+Nepal,SA,SA,Least Developed,Age 7 to 14,Numeracy,37 ,36 ,38 ,29 ,41 ,22 ,32 ,37 ,44 ,58 ,MICS6,2019
+Nepal,SA,SA,Least Developed,Grade 2/3,Reading,20 ,20 ,20 ,13 ,23 ,11 ,12 ,18 ,24 ,39 ,MICS6,2019
+Nepal,SA,SA,Least Developed,Grade 2/3,Numeracy,20 ,14 ,25 ,12 ,23 ,3 ,12 ,23 ,25 ,40 ,MICS6,2019
+North Macedonia,ECA,EECA,More Developed,Age 7 to 14,Reading,64 ,70 ,58 ,62 ,66 ,47 ,56 ,75 ,76 ,79 ,MICS6,2018-2019
+North Macedonia,ECA,EECA,More Developed,Age 7 to 14,Numeracy,41 ,35 ,47 ,38 ,43 ,28 ,37 ,50 ,42 ,57 ,MICS6,2018-2019
+North Macedonia,ECA,EECA,More Developed,Grade 2/3,Reading,45 ,55 ,36 ,,,,,,,,MICS6,2018-2019
+North Macedonia,ECA,EECA,More Developed,Grade 2/3,Numeracy,26 ,21 ,30 ,,,,,,,,MICS6,2018-2019
+Pakistan (Punjab),SA,SA,Less Developed,Age 7 to 14,Reading,36 ,38 ,35 ,31 ,47 ,16 ,32 ,41 ,47 ,59 ,MICS6,2017-2018
+Pakistan (Punjab),SA,SA,Less Developed,Age 7 to 14,Numeracy,12 ,11 ,13 ,10 ,15 ,6 ,11 ,13 ,13 ,18 ,MICS6,2017-2018
+Pakistan (Punjab),SA,SA,Less Developed,Grade 2/3,Reading,25 ,28 ,23 ,22 ,32 ,14 ,21 ,25 ,30 ,41 ,MICS6,2017-2018
+Pakistan (Punjab),SA,SA,Less Developed,Grade 2/3,Numeracy,7 ,7 ,8 ,6 ,9 ,4 ,7 ,8 ,7 ,12 ,MICS6,2017-2018
+Sao Tome and Principe,SSA,WCA,Least Developed,Age 7 to 14,Reading,38 ,42 ,35 ,39 ,38 ,23 ,31 ,33 ,46 ,59 ,MICS6,2019
+Sao Tome and Principe,SSA,WCA,Least Developed,Age 7 to 14,Numeracy,36 ,36 ,35 ,39 ,34 ,24 ,29 ,36 ,39 ,51 ,MICS6,2019
+Sao Tome and Principe,SSA,WCA,Least Developed,Grade 2/3,Reading,20 ,20 ,20 ,17 ,22 ,7 ,19 ,10 ,32 ,37 ,MICS6,2019
+Sao Tome and Principe,SSA,WCA,Least Developed,Grade 2/3,Numeracy,18 ,15 ,21 ,17 ,18 ,8 ,14 ,16 ,18 ,36 ,MICS6,2019
+Sierra Leone,SSA,WCA,Least Developed,Age 7 to 14,Reading,16 ,15 ,17 ,5 ,30 ,2 ,5 ,10 ,25 ,39 ,MICS6,2017
+Sierra Leone,SSA,WCA,Least Developed,Age 7 to 14,Numeracy,12 ,11 ,13 ,5 ,22 ,3 ,4 ,10 ,20 ,25 ,MICS6,2017
+Sierra Leone,SSA,WCA,Least Developed,Grade 2/3,Reading,6 ,8 ,4 ,2 ,12 ,1 ,1 ,1 ,12 ,18 ,MICS6,2017
+Sierra Leone,SSA,WCA,Least Developed,Grade 2/3,Numeracy,6 ,6 ,5 ,2 ,11 ,2 ,2 ,2 ,11 ,15 ,MICS6,2017
+State of Palestine,MENA,MENA,Less Developed,Age 7 to 14,Reading,53 ,57 ,48 ,59 ,52 ,40 ,48 ,56 ,58 ,64 ,MICS6,2019-2020
+State of Palestine,MENA,MENA,Less Developed,Age 7 to 14,Numeracy,46 ,46 ,46 ,54 ,45 ,30 ,39 ,51 ,51 ,60 ,MICS6,2019-2020
+State of Palestine,MENA,MENA,Less Developed,Grade 2/3,Reading,26 ,27 ,26 ,31 ,26 ,17 ,26 ,28 ,24 ,38 ,MICS6,2019-2020
+State of Palestine,MENA,MENA,Less Developed,Grade 2/3,Numeracy,26 ,25 ,27 ,36 ,25 ,13 ,24 ,30 ,30 ,37 ,MICS6,2019-2020
+Suriname,LAC,LAC,Less Developed,Age 7 to 14,Reading,47 ,47 ,47 ,43 ,51 ,32 ,39 ,52 ,59 ,65 ,MICS6,2018
+Suriname,LAC,LAC,Less Developed,Age 7 to 14,Numeracy,25 ,26 ,24 ,21 ,28 ,16 ,23 ,24 ,33 ,37 ,MICS6,2018
+Suriname,LAC,LAC,Less Developed,Grade 2/3,Reading,23 ,22 ,23 ,13 ,29 ,12 ,23 ,20 ,30 ,56 ,MICS6,2018
+Suriname,LAC,LAC,Less Developed,Grade 2/3,Numeracy,5 ,4 ,5 ,5 ,5 ,3 ,3 ,3 ,3 ,16 ,MICS6,2018
+Thailand,EAP,EAP,Less Developed,Age 7 to 14,Reading,73 ,76 ,70 ,70 ,76 ,62 ,73 ,74 ,78 ,78 ,MICS6,2019
+Thailand,EAP,EAP,Less Developed,Age 7 to 14,Numeracy,69 ,71 ,67 ,65 ,73 ,59 ,65 ,68 ,74 ,78 ,MICS6,2019
+Thailand,EAP,EAP,Less Developed,Grade 2/3,Reading,57 ,59 ,56 ,56 ,59 ,42 ,63 ,54 ,64 ,64 ,MICS6,2019
+Thailand,EAP,EAP,Less Developed,Grade 2/3,Numeracy,51 ,53 ,49 ,48 ,56 ,42 ,52 ,49 ,58 ,58 ,MICS6,2019
+Togo,SSA,WCA,Least Developed,Age 7 to 14,Reading,18 ,18 ,17 ,11 ,31 ,5 ,8 ,15 ,25 ,43 ,MICS6,2017
+Togo,SSA,WCA,Least Developed,Age 7 to 14,Numeracy,9 ,9 ,9 ,6 ,15 ,3 ,3 ,8 ,18 ,16 ,MICS6,2017
+Togo,SSA,WCA,Least Developed,Grade 2/3,Reading,4 ,5 ,3 ,2 ,9 ,3 ,0 ,3 ,5 ,15 ,MICS6,2017
+Togo,SSA,WCA,Least Developed,Grade 2/3,Numeracy,3 ,3 ,3 ,2 ,6 ,1 ,0 ,3 ,7 ,8 ,MICS6,2017
+Tonga,EAP,EAP,Less Developed,Age 7 to 14,Reading,63 ,65 ,61 ,60 ,72 ,61 ,59 ,64 ,60 ,71 ,MICS6,2019
+Tonga,EAP,EAP,Less Developed,Age 7 to 14,Numeracy,52 ,54 ,51 ,50 ,62 ,48 ,50 ,50 ,57 ,60 ,MICS6,2019
+Tonga,EAP,EAP,Less Developed,Grade 2/3,Reading,47 ,46 ,48 ,,,,,,,,MICS6,2019
+Tonga,EAP,EAP,Less Developed,Grade 2/3,Numeracy,25 ,21 ,29 ,,,,,,,,MICS6,2019
+Tunisia,MENA,MENA,Less Developed,Age 7 to 14,Reading,66 ,68 ,64 ,53 ,72 ,45 ,59 ,71 ,75 ,80 ,MICS6,2018
+Tunisia,MENA,MENA,Less Developed,Age 7 to 14,Numeracy,28 ,26 ,30 ,20 ,32 ,18 ,20 ,33 ,32 ,37 ,MICS6,2019
+Tunisia,MENA,MENA,Less Developed,Grade 2/3,Reading,47 ,48 ,46 ,36 ,53 ,23 ,42 ,53 ,52 ,72 ,MICS6,2018
+Tunisia,MENA,MENA,Less Developed,Grade 2/3,Numeracy,15 ,15 ,16 ,13 ,17 ,8 ,10 ,20 ,18 ,24 ,MICS6,2018
+Turkmenistan,ECA,EECA,Less Developed,Age 7 to 14,Reading,82 ,84 ,82 ,83 ,79 ,76 ,90 ,79 ,80 ,85 ,MICS6,2019
+Turkmenistan,ECA,EECA,Less Developed,Age 7 to 14,Numeracy,70 ,72 ,68 ,69 ,71 ,61 ,68 ,72 ,71 ,79 ,MICS6,2019
+Turkmenistan,ECA,EECA,Less Developed,Grade 2/3,Reading,71 ,75 ,69 ,,,,,,,,MICS6,2019
+Turkmenistan,ECA,EECA,Less Developed,Grade 2/3,Numeracy,53 ,65 ,59 ,,,,,,,,MICS6,2019
+Zimbabwe,SSA,ESA,Less Developed,Age 7 to 14,Reading,44 ,48 ,41 ,37 ,68 ,25 ,34 ,44 ,57 ,77 ,MICS6,2019
+Zimbabwe,SSA,ESA,Less Developed,Age 7 to 14,Numeracy,25 ,27 ,23 ,19 ,41 ,13 ,21 ,21 ,31 ,47 ,MICS6,2019
+Zimbabwe,SSA,ESA,Less Developed,Grade 2/3,Reading,20 ,21 ,18 ,12 ,42 ,6 ,10 ,17 ,28 ,51 ,MICS6,2019
+Zimbabwe,SSA,ESA,Less Developed,Grade 2/3,Numeracy,5 ,4 ,6 ,2 ,13 ,0 ,3 ,2 ,9 ,17 ,MICS6,2019
