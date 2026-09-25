@@ -1,75 +1,82 @@
-# AWS PartyRock - EduCare AI SA
+# AWS EduCare Cloud Support Platform
 
-## Overview
+## Project purpose
 
-This repository contains two projects completed as part of the **AWS AI & ML Scholars Program** and **AWS AI Practitioner Challenge** using **AWS PartyRock**.
+This repository is my **Cloud Computing solo project** for WeThinkCode_ elective proof of work.
 
-The projects explore how Generative AI can be used to improve educational support, learner intervention, and educational data analysis.
+The project started as an AWS PartyRock educational AI prototype. I upgraded the concept into a cloud architecture that shows how an education support platform can run on AWS using serverless services.
 
----
-
-## Project 1: EduCare AI SA - CAPS Exam Success Coach
-
-### Description
-
-EduCare AI SA is an AI-powered educational support platform prototype designed to help South African learners prepare for exams using CAPS-aligned learning support.
-
-The application generates personalized learning guidance based on learner needs and academic performance.
-
-### Features
-
-* CAPS-aligned study plans
-* Revision timetables
-* Practice questions and memorandums
-* Parent guidance recommendations
-* Tutor intervention suggestions
-* Wellness and study support recommendations
-* Motivational learner support
-* Educational support pathways
-
-### Target Audience
-
-* Learners (Grade 1–12)
-* Parents
-* Tutors
-* Teachers
-* Educational support professionals
-
-### Technologies Used
-
-* AWS PartyRock
-* Generative AI
-* Prompt Engineering
+The goal is to support learners, parents and education support teams with AI guidance, learner support requests, intervention recommendations and cloud hosted reporting.
 
 ---
 
-## Project 2: Educational Data Analysis
+## Why this is a cloud project
 
-### Description
+This project demonstrates cloud computing concepts beyond only AI.
 
-This project used AWS PartyRock's Analyze Data feature to explore educational performance trends using a foundational learning dataset.
+It uses and documents the following AWS cloud services:
 
-The goal was to identify learner challenges, educational inequalities, and intervention opportunities that could support the future development of EduCare AI SA.
+| Cloud area | AWS service | Purpose |
+|---|---|---|
+| Static hosting | Amazon S3 | Hosts the frontend demo site |
+| Serverless compute | AWS Lambda | Processes learner support requests |
+| API layer | Amazon API Gateway | Exposes an HTTPS endpoint for the frontend |
+| Cloud database | Amazon DynamoDB | Stores learner support requests |
+| Monitoring | Amazon CloudWatch | Stores Lambda logs and execution events |
+| Generative AI prototype | AWS PartyRock | Provides the AI learning support prototype |
+| Infrastructure planning | CloudFormation template | Documents how the cloud stack can be recreated |
 
-### Analysis Areas
-
-* Educational support patterns
-* At-risk learner groups
-* Learner intervention opportunities
-* AI-powered educational support solutions
-* Educational challenge and recommendation mapping
-
-### Key Findings
-
-* Numeracy performance was significantly lower than reading performance.
-* Wealth inequality strongly influenced learner outcomes.
-* Rural learners generally underperformed compared to urban learners.
-* Multiple learner groups were identified as being at high academic risk.
-* AI-powered educational support platforms can help provide scalable personalized learning support.
+This makes the project suitable for a Cloud Computing elective because it covers hosting, serverless computing, APIs, managed databases, monitoring, IAM and cloud architecture.
 
 ---
 
-## Repository Structure
+## System architecture
+
+```text
+Learner or Parent Browser
+        ↓
+Amazon S3 Static Website
+        ↓
+Amazon API Gateway
+        ↓
+AWS Lambda
+        ↓
+Amazon DynamoDB
+        ↓
+Amazon CloudWatch Logs
+
+AWS PartyRock
+        ↓
+AI study support and intervention prototype
+```
+
+---
+
+## Project features
+
+### 1. Cloud hosted frontend
+
+A small web interface can be hosted on Amazon S3. It allows a parent or learner to submit a support request.
+
+### 2. Serverless backend
+
+AWS Lambda receives the request from API Gateway and returns a support recommendation.
+
+### 3. Cloud database
+
+DynamoDB stores learner support requests with the learner name, grade, challenge and suggested intervention.
+
+### 4. Monitoring
+
+CloudWatch logs show when the Lambda function runs and whether requests are successful.
+
+### 5. AI layer with AWS PartyRock
+
+AWS PartyRock is used as the generative AI prototype layer for learner study support, CAPS aligned guidance and educational intervention ideas.
+
+---
+
+## Repository structure
 
 ```text
 aws-partyrock-educare-ai-sa
@@ -86,36 +93,63 @@ aws-partyrock-educare-ai-sa
 │   ├── screenshots
 │   └── analysis-exports
 │
+├── backend
+│   └── lambda_function.py
+│
+├── docs
+│   ├── architecture.md
+│   └── cloud-demo-guide.md
+│
+├── infrastructure
+│   └── cloudformation-template.yaml
+│
+├── web
+│   └── index.html
+│
 └── README.md
 ```
 
 ---
 
-## Learning Outcomes
+## Demo plan
 
-Through these projects I gained practical experience in:
+In the demo video I show:
 
-* Generative AI applications
-* Prompt engineering
-* AI-assisted educational support
-* AI-powered data analysis
-* Educational intervention design
-* AWS PartyRock development
+1. The GitHub repository and project structure
+2. The AWS PartyRock AI app
+3. The S3 bucket used for static website hosting
+4. The Lambda function that processes learner support requests
+5. The API Gateway endpoint
+6. The DynamoDB table storing requests
+7. The CloudWatch logs showing backend execution
+8. The architecture and design decisions
 
 ---
 
-## Future Vision
+## What I learned
 
-The long-term vision for EduCare AI SA is to become a comprehensive learner support ecosystem that connects:
+Through this project I learned how cloud systems are designed using managed AWS services:
 
-* Learners
-* Parents
-* Tutors
-* Teachers
-* Educational Psychologists
-* Educational Support Professionals
+* how to host a frontend on S3
+* how serverless compute works with Lambda
+* how APIs are exposed with API Gateway
+* how DynamoDB stores application data
+* how CloudWatch helps with monitoring
+* how PartyRock can be part of a cloud AI prototype
+* how to explain a cloud architecture from frontend to database
 
-through AI-powered learning support, intervention tracking, and personalized educational guidance.
+---
+
+## Future improvements
+
+The next version can include:
+
+* Amazon Cognito login for parents and tutors
+* Amazon Bedrock API integration instead of only PartyRock
+* CloudFront for better content delivery
+* AWS SAM or CDK deployment
+* dashboards for learner intervention trends
+* stronger IAM least privilege policies
 
 ---
 
@@ -123,6 +157,6 @@ through AI-powered learning support, intervention tracking, and personalized edu
 
 **Adelaide Mhuntana**
 
-* AWS AI & ML Scholars Program Participant
+WeThinkCode_ Cohort 2025
 
-* Aspiring AI, Cloud, and Software Engineering Professional
+Aspiring Data Engineer and Cloud Engineer
