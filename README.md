@@ -1,5 +1,13 @@
 # AWS EduCare Cloud Support Platform
 
+## Verification code
+
+```text
+WTC-BEJEV8E3
+```
+
+---
+
 ## Overview
 
 EduCare Cloud Support Platform is a growing education technology project focused on learner support, parent guidance, intervention planning and education data insights.
