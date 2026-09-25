@@ -1,0 +1,211 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AWS EduCare Cloud Support Platform</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f4f7fb;
+            color: #10213f;
+        }
+
+        header {
+            background: linear-gradient(135deg, #10213f, #ec4899);
+            color: white;
+            padding: 36px;
+            text-align: center;
+        }
+
+        main {
+            max-width: 1050px;
+            margin: 32px auto;
+            padding: 0 20px;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 22px;
+        }
+
+        .card {
+            background: white;
+            border-radius: 20px;
+            padding: 24px;
+            box-shadow: 0 12px 30px rgba(15, 23, 42, 0.08);
+            border: 1px solid #e5e7eb;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 14px;
+            font-weight: bold;
+        }
+
+        input,
+        select,
+        textarea {
+            width: 100%;
+            margin-top: 7px;
+            padding: 12px;
+            border-radius: 12px;
+            border: 1px solid #cbd5e1;
+            box-sizing: border-box;
+        }
+
+        button {
+            width: 100%;
+            background: #ec4899;
+            color: white;
+            border: none;
+            padding: 14px;
+            border-radius: 14px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .architecture {
+            display: grid;
+            gap: 12px;
+        }
+
+        .step {
+            border: 1px solid #dbe3ef;
+            padding: 14px;
+            border-radius: 14px;
+            background: #fbfdff;
+        }
+
+        .result {
+            margin-top: 18px;
+            background: #ecfdf5;
+            border: 1px solid #bbf7d0;
+            border-radius: 14px;
+            padding: 16px;
+            display: none;
+        }
+
+        footer {
+            text-align: center;
+            padding: 24px;
+            color: #64748b;
+        }
+
+        @media (max-width: 800px) {
+            .grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>AWS EduCare Cloud Support Platform</h1>
+        <p>Serverless learner support prototype using S3, API Gateway, Lambda, DynamoDB, CloudWatch and AWS PartyRock.</p>
+    </header>
+
+    <main>
+        <div class="grid">
+            <section class="card">
+                <h2>Learner Support Request</h2>
+                <p>This form represents the S3 hosted frontend. In the cloud version it sends requests to API Gateway and Lambda.</p>
+
+                <label>
+                    Learner Name
+                    <input id="learnerName" value="Lerato Mokoena">
+                </label>
+
+                <label>
+                    Grade
+                    <select id="grade">
+                        <option>Grade 4</option>
+                        <option>Grade 7</option>
+                        <option>Grade 9</option>
+                        <option>Grade 12</option>
+                    </select>
+                </label>
+
+                <label>
+                    Learning Challenge
+                    <textarea id="challenge">Learner is struggling with numeracy and exam preparation.</textarea>
+                </label>
+
+                <label>
+                    Parent Contact
+                    <input id="parentContact" value="parent@example.com">
+                </label>
+
+                <button onclick="submitSupportRequest()">Submit Support Request</button>
+
+                <div id="result" class="result"></div>
+            </section>
+
+            <section class="card">
+                <h2>Cloud Architecture</h2>
+                <div class="architecture">
+                    <div class="step"><strong>1. Amazon S3</strong><br>Hosts this static frontend.</div>
+                    <div class="step"><strong>2. API Gateway</strong><br>Provides the HTTPS endpoint.</div>
+                    <div class="step"><strong>3. AWS Lambda</strong><br>Processes the support request.</div>
+                    <div class="step"><strong>4. DynamoDB</strong><br>Stores the learner request and recommendation.</div>
+                    <div class="step"><strong>5. CloudWatch</strong><br>Shows logs and function monitoring.</div>
+                    <div class="step"><strong>6. AWS PartyRock</strong><br>Demonstrates the generative AI learning support layer.</div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        Built by Adelaide Mhuntana for WeThinkCode_ Cloud Computing elective proof of work.
+    </footer>
+
+    <script>
+        const API_ENDPOINT = "PASTE_YOUR_API_GATEWAY_URL_HERE";
+
+        async function submitSupportRequest() {
+            const result = document.getElementById("result");
+
+            const payload = {
+                learner_name: document.getElementById("learnerName").value,
+                grade: document.getElementById("grade").value,
+                challenge: document.getElementById("challenge").value,
+                parent_contact: document.getElementById("parentContact").value
+            };
+
+            result.style.display = "block";
+            result.innerHTML = "Processing request...";
+
+            if (API_ENDPOINT === "PASTE_YOUR_API_GATEWAY_URL_HERE") {
+                result.innerHTML = `
+                    <h3>Demo Mode</h3>
+                    <p><strong>Status:</strong> SUCCESS</p>
+                    <p><strong>Recommendation:</strong> Create a 7 day numeracy support plan with daily practice, worked examples and parent check ins.</p>
+                    <p>Paste your API Gateway invoke URL into API_ENDPOINT to connect this page to the live Lambda backend.</p>
+                `;
+                return;
+            }
+
+            try {
+                const response = await fetch(API_ENDPOINT, {
+                    method: "POST",
+                    headers: {"Content-Type": "application/json"},
+                    body: JSON.stringify(payload)
+                });
+
+                const data = await response.json();
+
+                result.innerHTML = `
+                    <h3>${data.status}</h3>
+                    <p>${data.message}</p>
+                    <p><strong>Recommendation:</strong> ${data.request.recommendation}</p>
+                    <p><strong>Request ID:</strong> ${data.request.request_id}</p>
+                `;
+            } catch (error) {
+                result.innerHTML = "Could not call the cloud API. Check the API Gateway URL and CORS settings.";
+            }
+        }
+    </script>
+</body>
+</html>
