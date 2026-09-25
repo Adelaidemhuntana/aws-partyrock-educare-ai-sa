@@ -62,6 +62,25 @@ The architecture separates the project into two layers:
 
 ---
 
+## Professional architecture and UML diagrams
+
+The full architecture documentation is in:
+
+[`docs/architecture.md`](docs/architecture.md)
+
+It includes:
+
+* system context diagram
+* AWS cloud architecture diagram
+* UML sequence diagram for request processing
+* DynamoDB data model diagram
+* CloudFormation resource map
+* logical component view
+
+These diagrams make it easier to understand how the AI prototype, frontend, API, Lambda backend, DynamoDB storage, CloudWatch monitoring and CloudFormation infrastructure fit together.
+
+---
+
 ## How the system works
 
 ### Step 1: Learner support experience
@@ -182,7 +201,7 @@ aws-partyrock-educare-ai-sa
 | `backend/lambda_function.py` | Serverless backend logic for learner support requests |
 | `infrastructure/cloudformation-template.yaml` | Infrastructure as code for AWS resources |
 | `web/index.html` | Static web interface concept |
-| `docs/architecture.md` | Architecture notes and explanation |
+| `docs/architecture.md` | Professional architecture and UML diagrams |
 | `ai-productivity-app/partyrock-link.txt.txt` | Live PartyRock prototype link |
 
 ---
@@ -224,7 +243,7 @@ The repository contains:
 * static frontend concept
 * Lambda backend code
 * deployed CloudFormation infrastructure plan
-* architecture documentation
+* professional architecture and UML documentation
 * live PartyRock AI prototype link
 * working DynamoDB storage for learner support requests
 * CloudWatch monitoring for Lambda execution logs
