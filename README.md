@@ -10,6 +10,16 @@ The long term goal is to build a practical cloud based education support system 
 
 ---
 
+## Live AI prototype
+
+The AI support prototype was built with AWS PartyRock.
+
+[Open EduCare AI CAPS Exam Success Coach](https://partyrock.aws/u/adelaidemhuntana/LLVCHZG5T/EduCare-AI-CAPS-Exam-Success-Coach)
+
+This PartyRock prototype is the AI layer of the project. It supports learners and parents with CAPS aligned study plans, revision support, practice questions, parent guidance, tutor intervention suggestions and learning support pathways.
+
+---
+
 ## Project vision
 
 EduCare is designed around a simple problem:
@@ -123,13 +133,13 @@ aws-partyrock-educare-ai-sa
 The project can be demonstrated in this order:
 
 1. Open the GitHub repository and explain the architecture
-2. Show the S3 static website frontend in `web/index.html`
-3. Show the Lambda backend in `backend/lambda_function.py`
-4. Show the DynamoDB table for learner support requests
-5. Test the Lambda function and show a response
-6. Open CloudWatch logs to prove the function executed
-7. Show the CloudFormation template as the infrastructure plan
-8. Open the AWS PartyRock app as the AI support prototype layer
+2. Click the PartyRock link in the README and show the AI support prototype
+3. Show the S3 static website frontend in `web/index.html`
+4. Show the Lambda backend in `backend/lambda_function.py`
+5. Show the DynamoDB table for learner support requests
+6. Test the Lambda function and show a response
+7. Open CloudWatch logs to prove the function executed
+8. Show the CloudFormation template as the infrastructure plan
 
 ---
 
@@ -168,6 +178,7 @@ The repository contains:
 * CloudFormation infrastructure plan
 * architecture documentation
 * cloud demo guide
+* live PartyRock AI prototype link
 
 The cloud implementation can continue growing by connecting the S3 frontend to API Gateway, Lambda and DynamoDB in AWS Console.
 
