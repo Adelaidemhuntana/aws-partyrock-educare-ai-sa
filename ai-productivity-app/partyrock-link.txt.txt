@@ -1,0 +1,6 @@
+EduCare AI CAPS Exam Success Coach
+
+Live AI prototype:
+https://partyrock.aws/u/adelaidemhuntana/LLVCHZG5T/EduCare-AI-CAPS-Exam-Success-Coach
+
+This is the AWS PartyRock AI support prototype for the EduCare Cloud Support Platform.
