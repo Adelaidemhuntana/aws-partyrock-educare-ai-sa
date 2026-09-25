@@ -35,12 +35,12 @@ The platform explores how AWS services can be used to collect learner support re
 
 ---
 
-## Cloud architecture
+## System architecture
 
 ```text
-Learner or Parent Browser
+Learner or Parent
         ↓
-Amazon S3 Static Website
+EduCare web interface
         ↓
 Amazon API Gateway
         ↓
@@ -55,19 +55,66 @@ AWS PartyRock
 AI study support and intervention prototype
 ```
 
+The architecture separates the project into two layers:
+
+1. **AI support layer**: AWS PartyRock is used to prototype the learner support experience.
+2. **Cloud platform layer**: AWS services are used to process, store and monitor learner support requests.
+
+---
+
+## How the system works
+
+### Step 1: Learner support experience
+
+A learner or parent uses the EduCare AI prototype to receive CAPS aligned study support, revision guidance, practice questions, parent guidance and intervention ideas.
+
+### Step 2: Support request capture
+
+The cloud platform is designed to capture a learner support request from a web interface or API request. A request can include the learner name, grade, learning challenge and parent contact.
+
+### Step 3: Serverless processing
+
+AWS Lambda receives the request and applies simple backend logic to create a support recommendation. For example, a reading challenge returns a reading support plan recommendation.
+
+### Step 4: Cloud database storage
+
+The processed learner support request is stored in Amazon DynamoDB. This makes the request available for future dashboards, intervention tracking and reporting.
+
+### Step 5: Monitoring
+
+Amazon CloudWatch records the Lambda execution logs. This helps with monitoring, troubleshooting and proving that the backend executed successfully.
+
 ---
 
 ## AWS services used
 
 | Cloud area | AWS service | Purpose |
 |---|---|---|
-| Static hosting | Amazon S3 | Hosts the frontend demo site |
+| Static hosting | Amazon S3 | Hosts the frontend demo site or static web interface |
+| API layer | Amazon API Gateway | Exposes an HTTPS endpoint for the backend |
 | Serverless compute | AWS Lambda | Processes learner support requests |
-| API layer | Amazon API Gateway | Exposes an HTTPS endpoint for the frontend |
 | Cloud database | Amazon DynamoDB | Stores learner support requests |
 | Monitoring | Amazon CloudWatch | Stores Lambda logs and backend activity |
 | AI prototype layer | AWS PartyRock | Provides AI based learner guidance and intervention ideas |
-| Infrastructure planning | CloudFormation | Documents how the cloud stack can be recreated |
+| Infrastructure as code | AWS CloudFormation | Creates the cloud resources from a template |
+| Security and permissions | AWS IAM | Allows Lambda to write to DynamoDB and CloudWatch |
+
+---
+
+## Current cloud implementation
+
+The current AWS implementation includes a deployed CloudFormation stack that creates the main backend resources.
+
+```text
+CloudFormation stack: educare-cloud-demo
+Region: Europe Stockholm eu-north-1
+DynamoDB table: educare-support-requests
+Lambda function: educare-support-request-handler
+API Gateway: educare-support-api
+CloudWatch log group: /aws/lambda/educare-support-request-handler
+```
+
+The Lambda function has been tested with a learner support request. The request was processed successfully and stored in the DynamoDB table.
 
 ---
 
@@ -83,7 +130,7 @@ AWS Lambda processes the support request and returns a basic recommendation base
 
 ### 3. Managed cloud database
 
-Amazon DynamoDB stores support request records such as learner name, grade, subject, challenge and recommendation.
+Amazon DynamoDB stores support request records such as learner name, grade, challenge, parent contact and recommendation.
 
 ### 4. Monitoring and logs
 
@@ -128,18 +175,15 @@ aws-partyrock-educare-ai-sa
 
 ---
 
-## Demo flow
+## Important files
 
-The project can be demonstrated in this order:
-
-1. Open the GitHub repository and explain the architecture
-2. Click the PartyRock link in the README and show the AI support prototype
-3. Show the S3 static website frontend in `web/index.html`
-4. Show the Lambda backend in `backend/lambda_function.py`
-5. Show the DynamoDB table for learner support requests
-6. Test the Lambda function and show a response
-7. Open CloudWatch logs to prove the function executed
-8. Show the CloudFormation template as the infrastructure plan
+| File | Purpose |
+|---|---|
+| `backend/lambda_function.py` | Serverless backend logic for learner support requests |
+| `infrastructure/cloudformation-template.yaml` | Infrastructure as code for AWS resources |
+| `web/index.html` | Static web interface concept |
+| `docs/architecture.md` | Architecture notes and explanation |
+| `ai-productivity-app/partyrock-link.txt.txt` | Live PartyRock prototype link |
 
 ---
 
@@ -148,6 +192,10 @@ The project can be demonstrated in this order:
 ### Why S3
 
 S3 is a simple and cost effective way to host a static frontend without running a server.
+
+### Why API Gateway
+
+API Gateway provides an HTTPS entry point for the frontend to send requests to Lambda.
 
 ### Why Lambda
 
@@ -173,14 +221,13 @@ The repository contains:
 
 * AWS PartyRock education support prototype material
 * learner support dataset and analysis material
-* S3 frontend demo file
+* static frontend concept
 * Lambda backend code
-* CloudFormation infrastructure plan
+* deployed CloudFormation infrastructure plan
 * architecture documentation
-* cloud demo guide
 * live PartyRock AI prototype link
-
-The cloud implementation can continue growing by connecting the S3 frontend to API Gateway, Lambda and DynamoDB in AWS Console.
+* working DynamoDB storage for learner support requests
+* CloudWatch monitoring for Lambda execution logs
 
 ---
 
@@ -191,9 +238,9 @@ The next version can include:
 * Amazon Cognito login for parents, learners and tutors
 * Amazon Bedrock API integration for production AI support
 * CloudFront distribution for faster frontend delivery
-* API Gateway connected to the web form
-* DynamoDB dashboards for learner intervention trends
-* IAM least privilege policies
+* API Gateway connected directly to the web form
+* dashboards for learner intervention trends
+* IAM least privilege policies for production use
 * AWS SAM or CDK for repeatable deployment
 
 ---
