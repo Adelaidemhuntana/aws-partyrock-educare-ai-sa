@@ -1,0 +1,111 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Description: AWS EduCare Cloud Support Platform serverless architecture
+
+Resources:
+  SupportRequestsTable:
+    Type: AWS::DynamoDB::Table
+    Properties:
+      TableName: educare-support-requests
+      BillingMode: PAY_PER_REQUEST
+      AttributeDefinitions:
+        - AttributeName: request_id
+          AttributeType: S
+      KeySchema:
+        - AttributeName: request_id
+          KeyType: HASH
+
+  LambdaExecutionRole:
+    Type: AWS::IAM::Role
+    Properties:
+      RoleName: educare-support-lambda-role
+      AssumeRolePolicyDocument:
+        Version: '2012-10-17'
+        Statement:
+          - Effect: Allow
+            Principal:
+              Service: lambda.amazonaws.com
+            Action: sts:AssumeRole
+      Policies:
+        - PolicyName: educare-support-lambda-policy
+          PolicyDocument:
+            Version: '2012-10-17'
+            Statement:
+              - Effect: Allow
+                Action:
+                  - logs:CreateLogGroup
+                  - logs:CreateLogStream
+                  - logs:PutLogEvents
+                Resource: '*'
+              - Effect: Allow
+                Action:
+                  - dynamodb:PutItem
+                  - dynamodb:GetItem
+                  - dynamodb:Scan
+                Resource: !GetAtt SupportRequestsTable.Arn
+
+  SupportRequestFunction:
+    Type: AWS::Lambda::Function
+    Properties:
+      FunctionName: educare-support-request-handler
+      Runtime: python3.12
+      Handler: lambda_function.lambda_handler
+      Role: !GetAtt LambdaExecutionRole.Arn
+      Timeout: 10
+      Environment:
+        Variables:
+          SUPPORT_TABLE_NAME: !Ref SupportRequestsTable
+      Code:
+        ZipFile: |
+          import json
+          def lambda_handler(event, context):
+              return {
+                  'statusCode': 200,
+                  'headers': {'Content-Type': 'application/json', 'Access-Control-Allow-Origin': '*'},
+                  'body': json.dumps({'message': 'Replace inline code with backend/lambda_function.py'})
+              }
+
+  SupportApi:
+    Type: AWS::ApiGateway::RestApi
+    Properties:
+      Name: educare-support-api
+
+  SupportResource:
+    Type: AWS::ApiGateway::Resource
+    Properties:
+      RestApiId: !Ref SupportApi
+      ParentId: !GetAtt SupportApi.RootResourceId
+      PathPart: support-request
+
+  SupportPostMethod:
+    Type: AWS::ApiGateway::Method
+    Properties:
+      RestApiId: !Ref SupportApi
+      ResourceId: !Ref SupportResource
+      HttpMethod: POST
+      AuthorizationType: NONE
+      Integration:
+        Type: AWS_PROXY
+        IntegrationHttpMethod: POST
+        Uri: !Sub
+          - arn:aws:apigateway:${AWS::Region}:lambda:path/2015-03-31/functions/${FunctionArn}/invocations
+          - FunctionArn: !GetAtt SupportRequestFunction.Arn
+
+  LambdaApiPermission:
+    Type: AWS::Lambda::Permission
+    Properties:
+      FunctionName: !Ref SupportRequestFunction
+      Action: lambda:InvokeFunction
+      Principal: apigateway.amazonaws.com
+
+Outputs:
+  DynamoDBTableName:
+    Description: DynamoDB table for learner support requests
+    Value: !Ref SupportRequestsTable
+
+  LambdaFunctionName:
+    Description: Lambda function name
+    Value: !Ref SupportRequestFunction
+
+  ApiName:
+    Description: API Gateway name
+    Value: !Ref SupportApi
